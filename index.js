@@ -3,7 +3,7 @@ import inquirer from "inquirer";
 import chalk from "chalk";
 let randomNumber = Math.floor(Math.random() * 10 + 1);
 let attemps = 0;
-console.log(chalk.cyanBright.bgWhiteBright("you have 5 attemps to guessed the number"));
+console.log(chalk.cyanBright.bgWhiteBright(" \t\t\t\t\tyou have 5 attemps to guessed the number \n\n"));
 do {
     attemps++;
     let answer = await inquirer.prompt([
@@ -15,7 +15,7 @@ do {
     ]);
     if (answer.userGuessedNumber === randomNumber) {
         console.log(chalk.yellowBright.bgGreenBright.italic("Congratulations! You guessed the right number"));
-        console.log(chalk.redBright.bgYellowBright.italic(`you did it in ${attemps} attemp`));
+        console.log(chalk.redBright.bgYellowBright.italic(`you nailed it on ${attemps} attemp`));
         break;
     }
     else {
