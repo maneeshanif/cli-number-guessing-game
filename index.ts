@@ -25,7 +25,7 @@ do {
       )
     );
     console.log(
-      chalk.redBright.bgYellowBright.italic(`you did it in ${attemps} attemp`)
+      chalk.redBright.bgYellowBright.italic(`You nailed it on the  ${attemps} try!`)
     );
     break;
   } else {

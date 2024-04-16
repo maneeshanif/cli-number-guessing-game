@@ -15,7 +15,7 @@ do {
     ]);
     if (answer.userGuessedNumber === randomNumber) {
         console.log(chalk.yellowBright.bgGreenBright.italic("Congratulations! You guessed the right number"));
-        console.log(chalk.redBright.bgYellowBright.italic(`you did it in ${attemps} attemp`));
+        console.log(chalk.redBright.bgYellowBright.italic(`You nailed it on the  ${attemps} try!`));
         break;
     }
     else {
