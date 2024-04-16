@@ -4,8 +4,11 @@ import chalk from "chalk";
 let randomNumber = Math.floor(Math.random() * 10 + 1);
 let attemps = 0;
 console.log(
-  chalk.cyanBright.bgWhiteBright("you have 5 attemps to guessed the number")
+  chalk.cyanBright.bgWhiteBright(
+    " \t\t\t\t\tyou have 5 attemps to guessed the number \n\n"
+  )
 );
+
 do {
   attemps++;
   let answer = await inquirer.prompt([
@@ -25,7 +28,9 @@ do {
       )
     );
     console.log(
-      chalk.redBright.bgYellowBright.italic(`You nailed it on the  ${attemps} try!`)
+      chalk.redBright.bgYellowBright.italic(
+        `you nailed it on ${attemps} attemp`
+      )
     );
     break;
   } else {
