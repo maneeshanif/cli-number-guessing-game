@@ -1,4 +1,8 @@
 #!/usr/bin/env node
+console.log(chalk.redBright.bold.bgWhiteBright.overline('\t\t\t\t\t\t Currency Converter'));
+console.log(chalk.greenBright('\nDeveloped By:'));
+console.log(chalk.yellowBright.underline("\tAnees Hanif"));
+console.log("\n");
 import inquirer from "inquirer";
 import chalk from "chalk";
 let randomNumber = Math.floor(Math.random() * 10 + 1);
@@ -15,11 +19,7 @@ do {
     ]);
     if (answer.userGuessedNumber === randomNumber) {
         console.log(chalk.yellowBright.bgGreenBright.italic("Congratulations! You guessed the right number"));
-<<<<<<< HEAD
-        console.log(chalk.redBright.bgYellowBright.italic(`You nailed it on the  ${attemps} try!`));
-=======
         console.log(chalk.redBright.bgYellowBright.italic(`you nailed it on ${attemps} attemp`));
->>>>>>> f9b12d3d1ca67426733955538648eaee5be0be0d
         break;
     }
     else {

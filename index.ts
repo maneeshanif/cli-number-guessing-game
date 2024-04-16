@@ -1,4 +1,8 @@
 #!/usr/bin/env node
+console.log(chalk.redBright.bold.bgWhiteBright.overline('\t\t\t\t\t\t Currency Converter'));
+console.log(chalk.greenBright('\nDeveloped By:'));
+console.log(chalk.yellowBright.underline("\tAnees Hanif"));
+console.log("\n");
 import inquirer from "inquirer";
 import chalk from "chalk";
 let randomNumber = Math.floor(Math.random() * 10 + 1);
