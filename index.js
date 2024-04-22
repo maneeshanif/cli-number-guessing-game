@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-console.log(chalk.redBright.bold.bgWhiteBright.overline('\t\t\t\t\t\t Currency Converter'));
+console.log(chalk.redBright.bold.bgWhiteBright.overline('\t\t\t\t\t\t Number Guessing Game'));
 console.log(chalk.greenBright('\nDeveloped By:'));
 console.log(chalk.yellowBright.underline("\tAnees Hanif"));
 console.log("\n");
